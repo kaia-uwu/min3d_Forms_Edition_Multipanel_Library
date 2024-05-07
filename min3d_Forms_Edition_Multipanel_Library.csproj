@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>K</Authors>
+    <Product />
+    <Company />
+    <Version>1.0.15</Version>
+    <Title>min3d_Forms_Edition_Multipanel_Library</Title>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="min3d_FEML_tester\**" />
+    <Compile Remove="min3d_tester\**" />
+    <EmbeddedResource Remove="min3d_FEML_tester\**" />
+    <EmbeddedResource Remove="min3d_tester\**" />
+    <None Remove="min3d_FEML_tester\**" />
+    <None Remove="min3d_tester\**" />
+  </ItemGroup>
+
+</Project>
